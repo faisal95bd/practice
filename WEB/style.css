@@ -1,0 +1,9 @@
+h1 {
+    color: cornflowerblue;
+}
+.first-heading {
+    color: darkgoldenrod;
+}
+.second-heading + pre {
+    font-size: larger;
+}
