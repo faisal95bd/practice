@@ -442,9 +442,18 @@
 
 // console.log(JSON.stringify(person, null, 2));
 
-
 //+ Arroy Function
 
-const add = (num1, num2) => num1 + num2;
+// const add = (num1, num2) => num1 + num2;
 
-console.log(add(10, 20));
+// console.log(add(10, 20));
+
+const person = {
+  name: "Faisal",
+  cars: ["BMW", "Audi", "Ferrari"],
+  toString: function () {
+    this.cars.forEach(car => console.log(`${this.name} has ${car} `));
+  },
+};
+
+person.toString();
