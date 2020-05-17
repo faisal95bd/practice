@@ -448,12 +448,32 @@
 
 // console.log(add(10, 20));
 
-const person = {
-  name: "Faisal",
-  cars: ["BMW", "Audi", "Ferrari"],
-  toString: function () {
-    this.cars.forEach(car => console.log(`${this.name} has ${car} `));
-  },
-};
+// const person = {
+//   name: "Faisal",
+//   cars: ["BMW", "Audi", "Ferrari"],
+//   toString: function () {
+//     this.cars.forEach(car => console.log(`${this.name} has ${car} `));
+//   },
+// };
 
-person.toString();
+// person.toString();
+
+//+ OOP
+
+class People {
+  constructor(name, age) {
+    this.nameTest = name;
+    this.ageTest = age;
+  }
+
+  eat() {
+    console.log(`${this.nameTest} is eating now`);
+  }
+  sleep() {
+    console.log(`${this.ageTest} year's ${this.nameTest} is sleeping now`);
+  }
+}
+
+const person = new People("Rana", 20);
+person.eat();
+person.sleep();
