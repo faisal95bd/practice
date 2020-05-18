@@ -460,20 +460,78 @@
 
 //+ OOP
 
-class People {
-  constructor(name, age) {
-    this.nameTest = name;
-    this.ageTest = age;
-  }
+// class People {
+//   constructor(name, age) {
+//     this.nameTest = name;
+//     this.ageTest = age;
+//   }
 
-  eat() {
-    console.log(`${this.nameTest} is eating now`);
-  }
-  sleep() {
-    console.log(`${this.ageTest} year's ${this.nameTest} is sleeping now`);
-  }
-}
+//   eat() {
+//     console.log(`${this.nameTest} is eating now`);
+//   }
+//   sleep() {
+//     console.log(`${this.ageTest} year's ${this.nameTest} is sleeping now`);
+//   }
+// }
 
-const person = new People("Rana", 20);
-person.eat();
-person.sleep();
+// const person = new People("Rana", 20);
+// person.eat();
+// person.sleep();
+
+//+ Inheritance
+
+// class Animal {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   eat() {
+//     console.log(`${this.name} is eating now`);
+//   }
+//   sleep() {
+//     console.log(`${this.name} is sleeping now`);
+//   }
+//   play() {
+//     console.log(`${this.name} is playing now`);
+//   }
+// }
+
+// class Cat extends Animal {
+//   constructor(name, age, color) {
+//     super(name, age);
+//     this.color = color;
+//   }
+//   catSleep() {
+//     super.sleep();
+//   }
+//   displayColor() {
+//     console.log(`${this.age} years old ${this.name} is a ${this.color} cat`);
+//     // console.log(`${this.color} cat`);
+//   }
+// }
+
+// const myCat = new Cat("Billi", 2, "White");
+// myCat.catSleep();
+// myCat.play();
+// myCat.displayColor();
+
+//+ Static Method - class er ekta method ke class er baire object declare na kore e call krte parsi
+
+// class Shop {
+//   constructor(name, address) {
+//     this.name = name;
+//     this.address = address;
+//   }
+//   displayContact() {
+//     console.log("This is contact");
+//   }
+//   static cart(productID, totalAmount) {
+//     // this.productID = productID;
+//     // this.totalAmount = totalAmount;
+//     console.log(`${productID} is TK${totalAmount}`);
+//   }
+// }
+
+// Shop.cart("A111", 650);
+
+
